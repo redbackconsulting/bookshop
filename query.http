@@ -1,0 +1,25 @@
+## get books
+GET http://localhost:4004/catalog/Books
+
+###
+POST http://localhost:4004/catalog/Books
+Content-Type: application/json
+
+{"ID": 10, "title": "This is my new book"}
+
+###
+
+GET http://localhost:4004/catalog/Orders
+
+###
+POST http://localhost:4004/catalog/Orders
+Content-Type: application/json
+
+{"books_ID":421, "quantity": 10}
+
+###
+DELETE HTTP://localhost:4004/catalog/Orders/a4684577-81f1-4d97-b1c4-eb375d37437b
+
+###
+GET HTTP://localhost:4004/bookshop-stats/OrdersInfo
+
